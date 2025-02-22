@@ -1,13 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
+/* Navbar */
+.navbar {
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li:nth-child(1) a { color: red; }
+.navbar ul li:nth-child(2) a { color: blue; }
+.navbar ul li:nth-child(3) a { color: red; }
+.navbar ul li:nth-child(4) a { color: blue; }
+
+/* Header */
+.header {
+    background: url('background.png') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
     padding: 20px;
+}
+
+.header .info h1 {
+    font-size: 36px;
+}
+
+.header .info p {
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background: yellow;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+.footer-content p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.footer-content .social-icons {
+    margin-top: 15px;
+}
+
+.footer-content .social-icons img {
+    width: 30px;
+    margin: 0 10px;
 }
