@@ -6,6 +6,16 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body */
+body {
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
 /* Navbar */
 .navbar {
     background: yellow;
@@ -50,7 +60,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
