@@ -195,7 +195,9 @@ body {
     margin: 50px; /* Adiciona margem ao redor do vídeo */
 }
 
-
+html {
+    scroll-behavior: smooth; /* Rola suavemente para âncoras */
+}
 
 /* Footer */
 footer {
