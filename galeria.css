@@ -1,0 +1,245 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo principal horizontalmente */
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa toda a largura da tela */
+}
+
+.navbar .logo {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li:nth-child(1) a { color: red; }
+.navbar ul li:nth-child(2) a { color: blue; }
+.navbar ul li:nth-child(3) a { color: red; }
+.navbar ul li:nth-child(4) a { color: blue; }
+
+/* Header */
+.header {
+    background: url('background.png') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 1200px; /* Largura máxima para o conteúdo */
+}
+
+/* Imagem */
+.letrasgrandes {
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    border-radius: 50px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+/* Texto */
+.texto {
+    background-color: #fff454; /* Fundo amarelo */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Largura máxima do contêiner de texto */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    font-family: 'Roboto Slab', serif;
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 1200px; /* Largura máxima para o conteúdo */
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.texto-container h2 {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Espaçamento abaixo do texto maior */
+}
+
+.conteudo-lado-a-lado {
+    display: flex; /* Flexbox para alinhar img-container e textomenor lado a lado */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.img-container {
+    flex: 0 0 auto; /* Não cresce, não encolhe, tamanho automático */
+    width: 200px; /* Largura fixa para a imagem */
+}
+
+.img-container img {
+    width: 100%; /* Faz a imagem ocupar 100% do contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.textomenor {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+.textomenor h1 {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+/* Contêiner dos cards */
+.card-container {
+    position: relative;
+    width: 400px; /* Aumenta a largura do contêiner para dar mais espaço */
+    height: 500px;
+    margin-bottom: 300px;
+    margin-top: 150px;
+    max-width: 1200px; /* Largura máxima para o conteúdo */
+}
+
+/* Estilo dos cards */
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+/* Posicionamento dos cards com espaçamento lateral */
+.card:nth-child(1) {
+    transform: rotate(-5deg) translateY(0);
+    left: -40px; /* Move mais para a esquerda */
+}
+
+.card:nth-child(2) {
+    transform: rotate(-3deg) translateY(50px);
+    left: -20px; /* Ajuste menor para a esquerda */
+}
+
+.card:nth-child(3) {
+    transform: rotate(0deg) translateY(100px);
+    left: 0px; /* Centralizado */
+}
+
+.card:nth-child(4) {
+    transform: rotate(3deg) translateY(150px);
+    left: 20px; /* Move um pouco para a direita */
+}
+
+.card:nth-child(5) {
+    transform: rotate(5deg) translateY(200px);
+    left: 40px; /* Move mais para a direita */
+}
+
+/* Efeito de hover para destacar o card */
+.card:hover {
+    transform: rotate(0deg) translateY(0) scale(1.1);
+    z-index: 10;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0; /* Adiciona espaçamento acima e abaixo */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    width: 100%;
+    max-width: 900px;
+    height: 0;
+    margin: 50px; /* Adiciona margem ao redor do vídeo */
+}
+
+
+
+/* Footer */
+footer {
+    background: #f8e505; 
+    padding: 20px 50px; 
+    display: flex; 
+    align-items: center; 
+    gap: 60px; 
+    justify-content: space-between;
+    width: 100%; /* Ocupa toda a largura da tela */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.footer-image img {
+    width: 250px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.footer-info {
+    flex: 1; 
+    text-align: left; 
+}
+
+.footer-info .logo {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 100px; 
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px; 
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 50px; 
+    height: 50px;
+}
