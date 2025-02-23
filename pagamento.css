@@ -1,0 +1,33 @@
+/* Estilização geral */
+body {
+    background-color: #fffacd; /* Amarelo claro */
+    color: #333; /* Texto escuro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Container principal */
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+.btn, .btn-voltar {
+    background-color: #ffcc00; /* Amarelo */
+    color: #fff; /* Texto branco */
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover, .btn-voltar:hover {
+    background-color: #e6b800; /* Amarelo mais escuro */
+}

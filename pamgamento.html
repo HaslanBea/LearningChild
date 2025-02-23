@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Pagamento</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pagamento.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Botão de Voltar -->
+        <button id="voltar" class="btn-voltar">Voltar</button>
+
         <h2>Pagamento</h2>
+
         <label for="valor">Valor:</label>
         <input type="number" id="valor" min="1">
 
@@ -20,7 +24,7 @@
             <label for="cartao">Cartão de Crédito</label>
         </div>
         
-        <button id="informar-dados">Informar dados</button>
+        <button id="informar-dados" class="btn">Informar dados</button>
         
         <div id="painel-pix" class="painel">
             <h3>PIX</h3>
@@ -56,7 +60,15 @@
             <p><strong>Total:</strong> <span id="total-cartao">R$ 0,00</span></p>
         </div>
 
-        <button id="pagar">Pagar</button>
+        <button id="pagar" class="btn">Pagar</button>
     </div>
+
+    <script>
+        // Voltar para a página index.html
+        document.getElementById("voltar").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
 </html>
+
