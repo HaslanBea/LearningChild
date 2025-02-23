@@ -168,6 +168,10 @@ footer {
     height: 50px;
 }
 
+html {
+    scroll-behavior: smooth; /* Rola suavemente para âncoras */
+}
+
 /* Card */
 .card {
     background-color: rgba(255, 253, 152, 0.644); 
